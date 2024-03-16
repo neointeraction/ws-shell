@@ -46,7 +46,9 @@ module.exports = (_, argv) => ({
       remotes: {
         dashboard:'dashboard@http://192.168.1.33:3001/remoteEntry.js'
       },
-      exposes: {},
+      exposes: {
+        './App': './src/App.jsx'
+      },
       shared: {
         ...deps,
         react: {
